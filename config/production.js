@@ -14,7 +14,7 @@ const config =  {
     // port: process.env.DBPORT
   },
   mapbox:{
-    endpoint: 'mapbox.places-permanent',
+    endpoint: 'mapbox.places',
     version: 'v5',
     access_token :'pk.eyJ1IjoibWF0dGZpY2tlIiwiYSI6ImNqNnM2YmFoNzAwcTMzM214NTB1NHdwbnoifQ.Or19S7KmYPHW8YjRz82v6g'
   }
