@@ -3,8 +3,12 @@ const config = {
   hostname: 'localhost',
   port: 3000,
   db: {
-    url: 'localhost',
-    db_name:'eze'
+    // url: 'localhost',
+    // db_name:'eze'
+    url: 'ezecluster-0ouhd.mongodb.net',
+    username: 'admin_eze',
+    password: 'wDrrdsidWuSCgKcZ',
+    db_name:'business'
   },
   mapbox: {
     endpoint: 'mapbox.places',
