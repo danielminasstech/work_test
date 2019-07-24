@@ -1,8 +1,5 @@
 const express = require('express');
 const router = express.Router({mergeParams:true});
-const mongoose = require('mongoose');
-const config = require('../../../../config');
-const Arrondisements = mongoose.model('arrondisements');
 const business_unit_controller = require('../../../../controllers/business_unit.controller');
 
 
