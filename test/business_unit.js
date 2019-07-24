@@ -15,7 +15,7 @@ describe('BusinessUnit', () => {
 			chai.request("http://127.0.0.1:3000")
 				.get('/api/v1/business_unit?address='+address)
 				.end((err, res) => {
-					console.log(err);
+					console.log(JSON.stringify(err));
 					if(res){
 						console.log(JSON.stringify(res));
 						res.should.have.status(200);
