@@ -15,7 +15,8 @@ const config =  {
   },
   mapbox:{
     endpoint: 'mapbox.places-permanent',
-    version: 'v5'
+    version: 'v5',
+    access_token :'pk.eyJ1IjoibWF0dGZpY2tlIiwiYSI6ImNqNnM2YmFoNzAwcTMzM214NTB1NHdwbnoifQ.Or19S7KmYPHW8YjRz82v6g'
   }
 };
 

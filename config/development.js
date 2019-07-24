@@ -5,10 +5,6 @@ const config = {
   db: {
     url: 'localhost',
     db_name:'eze'
-    // url: 'ezecluster-0ouhd.mongodb.net',
-    // username: 'admin_eze',
-    // password: 'wDrrdsidWuSCgKcZ',
-    // db_name:'test'
   },
   mapbox: {
     endpoint: 'mapbox.places',
