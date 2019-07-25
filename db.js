@@ -1,19 +1,25 @@
 // Bring Mongoose into the app
 const mongoose = require( 'mongoose' );
 const config = require('./config');
+
 // Build the connection string
+const connectionString = (!config.db.username)?
+	'mongodb://'+config.db.url+'/'+config.db.db_name:
+	'mongodb+srv://'+config.db.username+':'+config.db.password+'@'+config.db.url + '/' + config.db.db_name;
+
 
 //export this function and imported by server.js
-module.exports =async function(){
+module.exports =async ()=> {
 
 	if(!config.db.username)
-		 mongoose.connect('mongodb://'+config.db.url+'/'+config.db.db_name);
+		mongoose.connect(connectionString, {useNewUrlParser: true});
 	else
-		 mongoose.connect('mongodb://'+config.db.username+":"+config.db.password+"@"+config.db.url+":"+config.db.port+'/'+config.db.db_name);
+		mongoose.connect(connectionString,{ useNewUrlParser: true });
+
 
 	mongoose.set('debug', config.env !== 'production');
 	mongoose.connection.on('connected', function(){
-		console.log("Mongoose default connection is open to ", 'mongodb://localhost/eze');
+		console.log("Mongoose default connection is open to ", config.db.url);
 	});
 
 	mongoose.connection.on('error', function(err){

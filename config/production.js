@@ -7,7 +7,7 @@ const config =  {
     username: 'admin_eze',
     password: 'wDrrdsidWuSCgKcZ',
     port: '27017',
-    db_name:'business'
+    db_name:'test'
     // url: process.env.DBHOST,
     // username:process.env.DBUSERNAME,
     // password:process.env.DBPASSWORD,
