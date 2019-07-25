@@ -3,6 +3,6 @@
   "description": "Exam for work",
   "repository": "https://github.com/edwingook/work_test",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
-  "keywords": ["node", "express", "work"],
+  "keywords": ["node", "express"],
   "image": "heroku/nodejs"
 }

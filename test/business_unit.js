@@ -12,7 +12,7 @@ describe('BusinessUnit', () => {
 	describe('/GET business_unit by address', () => {
 		it('it should GET one business unit', (done) => {
 			let address = "10 Boulevard Arago, 75013 Paris";
-			chai.request("http://127.0.0.1:3000")
+			chai.request(server)
 				.get('/api/v1/business_unit?address='+address)
 				.end((err, res) => {
 					console.log(JSON.stringify(err));
@@ -23,7 +23,7 @@ describe('BusinessUnit', () => {
 					}
 					done();
 				});
-		}).timeout(5000);
+		}).timeout(10000);
 	});
 
 });
