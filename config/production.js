@@ -6,7 +6,7 @@ const config =  {
     url: 'ezecluster-0ouhd.mongodb.net',
     username: 'admin_eze',
     password: 'wDrrdsidWuSCgKcZ',
-    port: '',
+    port: '27017',
     db_name:'business'
     // url: process.env.DBHOST,
     // username:process.env.DBUSERNAME,

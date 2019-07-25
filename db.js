@@ -6,7 +6,7 @@ const config = require('./config');
 //export this function and imported by server.js
 module.exports =async function(){
 
-	if(!config.user)
+	if(!config.db.username)
 		 mongoose.connect('mongodb://'+config.db.url+'/'+config.db.db_name);
 	else
 		 mongoose.connect('mongodb://'+config.db.username+":"+config.db.password+"@"+config.db.url+":"+config.db.port+'/'+config.db.db_name);
