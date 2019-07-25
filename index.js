@@ -4,7 +4,6 @@ const config = require('./config');
 const body_parser = require('body-parser');
 require('./models')();
 const morgan = require('morgan');
-process.env.NODE_ENV = 'production';
 const router = require('./routes/api/')();
 const env = process.env.NODE_ENV || 'development';
 const db = require('./db')();
